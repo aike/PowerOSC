@@ -35,8 +35,9 @@ function setButtons(s)
 
 function setButton(id, label, onclick)
 {
+  let elem = document.querySelector(id);
+  elem.innerText = label;
   if (label !== '') {
-    document.querySelector(id).innerText = label;
-    document.querySelector(id).setAttribute('onclick', onclick);
+    elem.setAttribute('onclick', onclick);
   }
 }
