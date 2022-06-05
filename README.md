@@ -21,7 +21,7 @@ $message5 = $null
 
 ## Dependent Libraries
 
-PowerOSC uses SharpOSC.dll 
+PowerOSC uses SharpOSC.dll  
 https://github.com/ValdemarOrn/SharpOSC
 
 ## Reference
