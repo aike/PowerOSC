@@ -1,6 +1,6 @@
 PowerOSC
 ===
-PowerOSC is an example program with a Web UI, local web server and OSC message sender written in PowerShell script.
+PowerOSC is an example program with a Web UI, local web server and OSC message sender written in Windows PowerShell script.
 
 ![screenshot](ss.gif)
 
