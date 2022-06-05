@@ -6,15 +6,17 @@ PowerOSC is an example program with a Web UI, local web server and OSC message s
 
 ## OSC message definition
 
-OSC Message defined in server.ps1 like this:
+OSC destination and messages are defined in server.ps1 like this:
 
 ```PowerShell
 $osc = New-Object SharpOSC.UDPSender "127.0.0.1", 8000
 $labels = '["Play", "Stop", "Zoom+", "Zoom-", "", "", "", "", ""]'
 $message0 = New-Object SharpOSC.OscMessage '/play', 1
 $message1 = New-Object SharpOSC.OscMessage '/stop', 1
-$message3 = New-Object SharpOSC.OscMessage '/zoom/y', 1
-$message4 = New-Object SharpOSC.OscMessage '/zoom/y', (-1)
+$message2 = New-Object SharpOSC.OscMessage '/zoom/y', 1
+$message3 = New-Object SharpOSC.OscMessage '/zoom/y', (-1)
+$message4 = $null
+$message5 = $null
 ```
 
 ## Dependent Libraries
